@@ -30,6 +30,3 @@ This Python script provides a suite of functions for cryptographic analysis, foc
 
 Clone this repository to explore the code and use it for cryptographic experiments, educational purposes, or security analysis tasks. Customize the functions and adapt them to suit different encryption scenarios or historical cryptanalysis challenges.
 
----
-
-This script serves as a versatile tool for cryptographic analysis, providing both theoretical insights into encryption techniques and practical tools for encryption, decryption, and cryptanalysis tasks. Its modular structure allows for easy customization and extension for specialized cryptographic studies or real-world applications.
