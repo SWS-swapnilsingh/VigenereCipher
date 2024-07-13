@@ -1,58 +1,35 @@
-# Vigenère Cipher and Substitution Cipher Analysis
+# Vigenere Cipher Project
 
-This Python script implements functions to encrypt and decrypt text using the Vigenère cipher, perform frequency analysis, and cryptanalyze substitution ciphers. It includes methods to predict encryption mappings, find password lengths for Vigenère ciphers, and decrypt encrypted text.
+This Python script provides a suite of functions for cryptographic analysis, focusing on the Vigenère cipher and substitution cipher techniques. Here's an overview of its capabilities and real-world applications:
 
-## Substitution Cipher Functions
+## Features
 
-### `process_file_content(filename)`
-- Reads a text file and removes all non-lowercase alphabetic characters.
+- **Substitution Cipher Analysis**: Includes functions to encrypt and decrypt text using a predefined substitution cipher mapping. It also performs frequency analysis to predict the mapping used in encryption.
   
-### `letter_distribution(s)`
-- Counts the occurrences of each lowercase letter in string `s`.
+- **Vigenère Cipher Analysis**: Implements methods to encrypt and decrypt text using the Vigenère cipher with a specified password. It includes functionalities to determine the length of the password and perform decryption based on frequency analysis.
 
-### `sort_list_of_tuples(tuples_list)`
-- Sorts a list of tuples by the second element in descending order.
+- **Cryptanalysis Functions**: Provides tools to analyze encrypted texts, predict encryption keys or passwords, and decrypt the text using both statistical frequency analysis and known plaintext attacks.
 
-### `substitution_encrypt(s, d)`
-- Encrypts string `s` using substitution cipher mappings from dictionary `d`.
+## Real-World Applications
 
-### `substitution_decrypt(s, d)`
-- Decrypts string `s` using the reverse mappings of dictionary `d`.
+- **Security Analysis**: Useful in cybersecurity and digital forensics for analyzing encrypted communications and data. It helps security analysts understand encryption techniques and weaknesses in encrypted messages.
 
-### `cryptanalyse_substitution(s)`
-- Predicts the substitution dictionary used to encrypt string `s`.
+- **Historical Cryptanalysis**: Valuable in historical studies to decipher ancient texts encrypted with substitution or Vigenère ciphers, offering insights into historical events or encrypted manuscripts.
 
-### `check(encryption_mapping, generated_mapping)`
-- Compares two mappings (`encryption_mapping` and `generated_mapping`) to validate the accuracy of decryption.
-
-## Vigenère Cipher Functions
-
-### `vigenere_encrypt(s, password)`
-- Encrypts string `s` using the Vigenère cipher with the given `password`.
-
-### `vigenere_decrypt(s, password)`
-- Decrypts string `s` using the Vigenère cipher with the given `password`.
-
-### `collision_freq(s1, s2)`
-- Calculates the collision frequency between two strings `s1` and `s2`.
-
-### `rotate_compare(s, r)`
-- Compares the collision frequency between `s` and its rotated version by `r` positions to determine the length of the Vigenère cipher password.
-
-### `cryptanalyse_vigenere_findlength(s)`
-- Determines the length of the Vigenère cipher password used to encrypt string `s`.
-
-### `divide(encrypted_text, r)`
-- Divides the encrypted text into `r` substrings for Vigenère cipher analysis.
-
-### `cryptanalyse_vigenere_afterlength(s, k)`
-- Given encrypted string `s` and password length `k`, finds the Vigenère cipher password.
-
-### `cryptanalyse_vigenere(s)`
-- Cryptanalyzes the Vigenère cipher used to encrypt string `s` and outputs the decrypted plaintext along with the password.
+- **Educational Purposes**: Benefits students and educators studying cryptography by providing hands-on tools to explore and understand fundamental encryption and decryption techniques.
 
 ## Usage
 
-1. **Clone the Repository**: Clone this repository to your local machine.
-   
+1. **Installation**: Clone the repository and ensure Python 3.x is installed with required dependencies (`re`, `string`).
 
+2. **Execution**: Run the script to encrypt, decrypt, or analyze text files using Vigenère and substitution cipher methods.
+
+3. **Customization**: Modify input files, encryption parameters, and encryption mappings to adapt the script for specific cryptographic tasks or educational purposes.
+
+## Getting Started
+
+Clone this repository to explore the code and use it for cryptographic experiments, educational purposes, or security analysis tasks. Customize the functions and adapt them to suit different encryption scenarios or historical cryptanalysis challenges.
+
+---
+
+This script serves as a versatile tool for cryptographic analysis, providing both theoretical insights into encryption techniques and practical tools for encryption, decryption, and cryptanalysis tasks. Its modular structure allows for easy customization and extension for specialized cryptographic studies or real-world applications.
